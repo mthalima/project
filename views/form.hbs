@@ -1,0 +1,62 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Form Example</title>
+    <link
+      href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
+      rel='stylesheet'
+    />
+    <!-- Using Tailwind CSS -->
+  </head>
+  <body class='bg-gray-100 flex items-center justify-center h-screen'>
+    <form
+      action='/submit'
+      method='POST'
+      class='bg-white p-8 rounded shadow-md w-full max-w-sm'
+    >
+      <h1 class='text-xl text-sky-400 font-bold mb-4 text-center'>SHOPPER
+        TRANSPORT</h1>
+
+      <!-- First Input Field -->
+      <div class='mb-4'>
+        <label
+          for='input1'
+          class='block text-sm font-medium text-sky-400'
+        >Origem</label>
+        <input
+          type='text'
+          id='input1'
+          name='field1'
+          placeholder='Origem'
+          required
+          class='mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
+        />
+      </div>
+
+      <!-- Second Input Field -->
+      <div class='mb-4'>
+        <label
+          for='input2'
+          class='block text-sm font-medium text-sky-400'
+        >Destino</label>
+        <input
+          type='text'
+          id='input2'
+          name='field2'
+          placeholder='Destino'
+          required
+          class='mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500'
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type='submit'
+        class='w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition'
+      >
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
